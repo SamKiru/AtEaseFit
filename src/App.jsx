@@ -1,18 +1,14 @@
-import Home from "./components/Home"; 
-import Signin from "./components/Signin";
-import './styles/tailwind.css'
+import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "./styles/tailwind.css";
 
 function App() {
-
   return (
-   <>
-   <Home>
-    
-   </Home>
-   <Signin></Signin>
-   </>
-  )
+    <>
+      <Home></Home>
+    </>
+  );
 }
 
-export default App
+export default App;
