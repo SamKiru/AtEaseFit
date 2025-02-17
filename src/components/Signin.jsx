@@ -1,8 +1,8 @@
-import background from './bg.jpg'
+import background from "./bg.jpg";
 export default function Signin() {
-    return (
-      <>
-        {/*
+  return (
+    <>
+      {/*
           This example requires updating your template:
   
           ```
@@ -10,22 +10,25 @@ export default function Signin() {
           <body class="h-full">
           ```
         */}
-        <div 
-              className="bg-cover bg-center bg-no-repeat min-h-screen" 
-              style={{ backgroundImage: `url(${background})` }} // <-- ADD IMAGE HERE
-            >
+      <div
+        className="bg-cover bg-center bg-no-repeat min-h-screen"
+        style={{ backgroundImage: `url(${background})` }} // <-- ADD IMAGE HERE
+      >
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h1  className="mx-auto h-10 w-auto">AtEaseFit</h1>
+            <h1 className="mx-auto h-10 w-auto">AtEaseFit</h1>
             <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-white-900">
-              Sign in to your accountssssssssssssssssss
+              Sign in to your accounts
             </h2>
           </div>
-  
+
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form action="#" method="POST" className="space-y-6">
               <div>
-                <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
+                <label
+                  htmlFor="email"
+                  className="block text-sm/6 font-medium text-gray-900"
+                >
                   Email address
                 </label>
                 <div className="mt-2">
@@ -39,14 +42,20 @@ export default function Signin() {
                   />
                 </div>
               </div>
-  
+
               <div>
                 <div className="flex items-center justify-between">
-                  <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
+                  <label
+                    htmlFor="password"
+                    className="block text-sm/6 font-medium text-gray-900"
+                  >
                     Password
                   </label>
                   <div className="text-sm">
-                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <a
+                      href="#"
+                      className="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >
                       Forgot password?
                     </a>
                   </div>
@@ -62,7 +71,7 @@ export default function Signin() {
                   />
                 </div>
               </div>
-  
+
               <div>
                 <button
                   type="submit"
@@ -72,18 +81,19 @@ export default function Signin() {
                 </button>
               </div>
             </form>
-  
+
             <p className="mt-10 text-center text-sm/6 text-gray-500">
-              Not a member?{' '}
-              <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+              Not a member?{" "}
+              <a
+                href="#"
+                className="font-semibold text-indigo-600 hover:text-indigo-500"
+              >
                 Start a 14 day free trial
               </a>
             </p>
           </div>
         </div>
-        </div>
-        
-      </>
-    )
-  }
-  
+      </div>
+    </>
+  );
+}
